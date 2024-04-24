@@ -44,12 +44,16 @@ export default function Header() {
           open={open}
           onClose={handleClose}
         >
-          <MenuItem onClick={handleClose}>
-            <Link href={"/conta"}> Minha conta </Link>
-          </MenuItem>
-          <MenuItem onClick={handleClose}>
-            <Link href={"/login"}> Sair </Link>
-          </MenuItem>
+          <Link href={"/conta"}>
+            <MenuItem onClick={handleClose}>
+              Minha conta 
+            </MenuItem>
+          </Link>
+          <Link href={"/login"}>
+            <MenuItem onClick={handleClose}>
+              Sair
+            </MenuItem>
+          </Link>
         </Menu>
       </nav>
     </header>

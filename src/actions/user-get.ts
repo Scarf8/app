@@ -27,9 +27,13 @@ export default async function userGet() {
     // });
     // if (!response.ok) throw new Error('Erro ao pegar o usuário.');
     // const data = (await response.json()) as User;
-    const data = userJson;
+
+    const name = cookies().get('name')?.value;
+
+    const data = userJson.filter(el => el.name === name);
     return { data, ok: true, error: '' };
   } catch (error: unknown) {
     return apiError(error);
   }
 }
+

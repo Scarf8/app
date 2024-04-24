@@ -1,5 +1,5 @@
 import Feed from "@/components/feed/feed";
-import catsJson from "./json-data/cats.json";
+import catsJson from "../json-data/cats.json";
 import userGet from "@/actions/user-get";
 
 export default function Home() {

@@ -31,7 +31,7 @@ export default async function userPost(state: {}, formData: FormData) {
       const { ok } = await login({}, formData);
 
       if (!ok) {
-          throw new Error('Erro ao logar.');
+          throw new Error('Erro.');
       }
 
       return { data: null, ok: true, error: '' };

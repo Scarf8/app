@@ -3,7 +3,7 @@
 import apiError from '@/functions/api-error';
 import login from './login';
 import { cookies } from 'next/headers';
-import userJson from '../app/json-data/user.json';
+import userJson from '../json-data/user.json';
 
 export type User = {
   id: number;

@@ -1,6 +1,6 @@
 'use server';
 
-import catsJson from "../app/json-data/cats.json";
+import catsJson from "../json-data/cats.json";
 
 export type Photo = {
   id: number;

@@ -2,12 +2,12 @@
 
 import login from '@/actions/login';
 import { useFormState, useFormStatus } from 'react-dom';
-import Button from '@/components/forms/button';
 import Input from '@/components/forms/input';
 import ErrorMessage from '../helper/error-message';
 import React from 'react';
 import Link from 'next/link';
 import styles from './login-form.module.css';
+import { Button } from '@mui/material';
 
 function FormButton() {
   const { pending } = useFormStatus();
@@ -17,7 +17,7 @@ function FormButton() {
       {pending ? (
         <Button disabled={pending}>Enviando...</Button>
       ) : (
-        <Button style={{background: '#fb1', color: '#764701', fontFamily:'Helvetica, Arial, sans-serif'}} >Entrar</Button>
+        <Button variant="contained" style={{background: '#fb1', color: '#764701', fontFamily:'Helvetica, Arial, sans-serif'}} >Entrar</Button>
       )}
     </>
   );

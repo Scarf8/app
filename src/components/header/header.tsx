@@ -11,7 +11,7 @@ import { Icon } from "@mui/material";
 export default function Header() {
   const [anchorEl, setAnchorEl] = React.useState(null);
   const open = Boolean(anchorEl);
-  const handleClick = (event) => {
+  const handleClick = (event: any) => {
     setAnchorEl(event.currentTarget);
   };
   const handleClose = () => {

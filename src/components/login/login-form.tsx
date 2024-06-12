@@ -15,9 +15,9 @@ function FormButton() {
   return (
     <>
       {pending ? (
-        <Button variant="contained" disabled={pending}>Enviando...</Button>
+        <Button disabled={pending}>Enviando...</Button>
       ) : (
-        <Button variant="contained" style={{background: '#fb1', color: '#764701', fontFamily:'Helvetica, Arial, sans-serif'}} >Entrar</Button>
+        <Button style={{background: '#fb1', color: '#764701', fontFamily:'Helvetica, Arial, sans-serif'}} >Entrar</Button>
       )}
     </>
   );
